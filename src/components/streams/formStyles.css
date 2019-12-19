@@ -1,0 +1,35 @@
+.ui_form{
+    display: grid;
+    grid-gap: 10px;
+    background: beige;
+    border: 1px solid;
+    margin: 2rem auto 0 auto;
+    max-width: 500px;
+    padding: 1rem;
+}
+
+.ui_form input{
+    background: white;
+    border: 1px solid;
+    padding: 0.7rem;
+}
+
+.ui_form input:focus{
+    outline: 3px solid;
+}
+
+.ui_form label{
+    font-size: 1.2rem;
+}
+
+.ui_form button{
+    background: lightblue;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    width: 100%;
+    border: 0;
+}
+
+ui_form button:hover{
+    background: white;
+}

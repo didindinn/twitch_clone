@@ -11,14 +11,20 @@ class CreateStream extends React.Component{
       </Fragment>
     )
   }
+
+  onSubmitForm(formValues){
+    console.log(formValues)
+  }
+
   render(){
       return(
-          <form className="ui_form">
+          <form onSubmit={this.props.handleSubmit(this.onSubmitForm)} className="ui_form">
               <Field name="title" label="Enter Title" component={this.renderInputBox}/>
               <Field name="description" label="Enter Description" component={this.renderInputBox}/>
+              <button>Submit</button>
           </form>
       )
   }
 }
 
-export default CreateStream
+export default reduxForm({form: 'createStream'})(CreateStream)
